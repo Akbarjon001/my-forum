@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="{% static 'js/script.js' %}"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <h1>Create topic</h1>
+            <form action="" method="POST" onsubmit="return validateForm()" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="title">Title <span class="require">*</span></label>
+                    <input type="text" class="form-control" name="title" id="title" />
+                    <span id="title-error" class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea rows="5" class="form-control" name="description" id="description"></textarea>
+                    <span id="description-error" class="error-message"></span>
+                </div>
+
+                <select id="select" name="select" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                    <option selected>others</option>
+                    <option value="back-end">Back-end</option>
+                    <option value="front-end">Front-end</option>
+                    <option value="full-stack">Full-Stack</option>
+                    <option value="java-script">Java Script</option>
+                    <option value="python">Python</option>
+                </select>
+
+                <div class="form-group">
+                    <input
+                        type="file"
+                        id="photo"
+                        name="photo"
+                        accept=".jpg,.jpeg,.png">
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">Create</button>
+                    <button class="btn btn-default">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    function validateForm() {
+        var title = document.getElementById("title").value;
+        var description = document.getElementById("description").value;
+        var titleError = document.getElementById("title-error");
+        var descriptionError = document.getElementById("description-error");
+
+        if (title.trim() === "") {
+            titleError.innerText = "Title cannot be empty";
+            return false; // Prevent form submission
+        } else {
+            titleError.innerText = "";
+        }
+
+        if (description.trim() === "") {
+            descriptionError.innerText = "Description cannot be empty";
+            return false; // Prevent form submission
+        } else {
+            descriptionError.innerText = "";
+        }
+
+        return true; // Allow form submission
+    }
+</script>
+
+{% endblock content %}

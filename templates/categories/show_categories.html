@@ -1,0 +1,228 @@
+{% extends 'base.html' %}
+{% block content %}
+<style type="text/css">
+body{margin-top:20px;
+background:#eee;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.height-5x {
+    height: 3rem!important;
+}
+.width-5x {
+    width: 3rem!important;
+}
+.flex-center {
+    justify-content: center!important;
+}
+.flex-center {
+    align-items: center!important;
+}
+.rounded-circle {
+    border-radius: 50%!important;
+}
+
+.align-items-center {
+    align-items: center!important;
+}
+.flex-grow-1 {
+    flex-grow: 1!important;
+}
+.d-flex {
+    display: flex!important;
+}
+
+.position-relative {
+    position: relative!important;
+}
+.shadow-sm {
+    box-shadow: 0 .125rem .25rem rgba(13,15,12,.075)!important;
+}
+
+.ms-n3 {
+    margin-left: -1rem!important;
+}
+</style>
+<div class="container">
+    <div class="row mb-4">
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card hover-lift hover-shadow-xl shadow-sm border-0">
+                <!--card-body-->
+                <div class="card-body p-4">
+                    <div class="d-flex mb-4 align-items-center">
+
+                        <!--Companies group-->
+                        <div class="flex-grow-1 d-flex align-items-center">
+                            <!--Campany-->
+                            <div class="width-5x height-5x p-2 bg-white shadow-sm position-relative flex-center rounded-circle border">
+                                <img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="img-fluid" alt="">
+                            </div>
+                            <!--Campany-->
+                            <div class="width-5x height-5x p-2 ms-n3 bg-white shadow-sm position-relative flex-center rounded-circle border">
+                                <img src="https://bootdey.com/img/Content/avatar/avatar2.png" class="img-fluid" alt="">
+                            </div>
+                            <!--Campany-->
+                            <div class="width-5x height-5x p-2 ms-n3 bg-white shadow-sm position-relative flex-center rounded-circle border">
+                                <img src="https://bootdey.com/img/Content/avatar/avatar3.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <h5>Back-end</h5>
+                    <p class="mb-0 text-muted">{{ back_end }} topics in this category!</p>
+                </div>
+                <!--link-->
+                <a href="categories/back-end" class="stretched-link"></a>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card hover-lift hover-shadow-xl shadow-sm border-0">
+                <!--card-body-->
+                <div class="card-body p-4">
+                    <div class="d-flex mb-4 align-items-center">
+
+                        <!--Companies group-->
+                        <div class="flex-grow-1 d-flex align-items-center">
+                            <!--Campany-->
+                            <div class="width-5x height-5x p-2 bg-white shadow-sm position-relative flex-center rounded-circle border">
+                                <img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="img-fluid" alt="">
+                            </div>
+                            <!--Campany-->
+                            <div class="width-5x height-5x p-2 ms-n3 bg-white shadow-sm position-relative flex-center rounded-circle border">
+                                <img src="https://bootdey.com/img/Content/avatar/avatar2.png" class="img-fluid" alt="">
+                            </div>
+                            <!--Campany-->
+                            <div class="width-5x height-5x p-2 ms-n3 bg-white shadow-sm position-relative flex-center rounded-circle border">
+                                <img src="https://bootdey.com/img/Content/avatar/avatar3.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <h5>Front-end</h5>
+                    <p class="mb-0 text-muted">{{ front_end }} topics in this category!</p>
+                </div>
+                <!--link-->
+                <a href="categories/front-end" class="stretched-link"></a>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card hover-lift hover-shadow-xl shadow-sm border-0">
+                <!--card-body-->
+                <div class="card-body p-4">
+                    <div class="d-flex mb-4 align-items-center">
+
+                        <!--Companies group-->
+                        <div class="flex-grow-1 d-flex align-items-center">
+                            <!--Campany-->
+                            <div class="width-5x height-5x p-2 bg-white shadow-sm position-relative flex-center rounded-circle border">
+                                <img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="img-fluid" alt="">
+                            </div>
+                            <!--Campany-->
+                            <div class="width-5x height-5x p-2 ms-n3 bg-white shadow-sm position-relative flex-center rounded-circle border">
+                                <img src="https://bootdey.com/img/Content/avatar/avatar2.png" class="img-fluid" alt="">
+                            </div>
+                            <!--Campany-->
+                            <div class="width-5x height-5x p-2 ms-n3 bg-white shadow-sm position-relative flex-center rounded-circle border">
+                                <img src="https://bootdey.com/img/Content/avatar/avatar3.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <h5>Full Stack</h5>
+                    <p class="mb-0 text-muted">{{ full_stack }} topics in this category!</p>
+                </div>
+                <!--link-->
+                <a href="categories/full-stack" class="stretched-link"></a>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card hover-lift hover-shadow-xl shadow-sm border-0">
+                <!--card-body-->
+                <div class="card-body p-4">
+                    <div class="d-flex mb-4 align-items-center">
+
+                        <!--Companies group-->
+                        <div class="flex-grow-1 d-flex align-items-center">
+                            <!--Campany-->
+                            <div class="width-5x height-5x p-2 bg-white shadow-sm position-relative flex-center rounded-circle border">
+                                <img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="img-fluid" alt="">
+                            </div>
+                            <!--Campany-->
+                            <div class="width-5x height-5x p-2 ms-n3 bg-white shadow-sm position-relative flex-center rounded-circle border">
+                                <img src="https://bootdey.com/img/Content/avatar/avatar2.png" class="img-fluid" alt="">
+                            </div>
+                            <!--Campany-->
+                            <div class="width-5x height-5x p-2 ms-n3 bg-white shadow-sm position-relative flex-center rounded-circle border">
+                                <img src="https://bootdey.com/img/Content/avatar/avatar3.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <h5>JavaScript</h5>
+                    <p class="mb-0 text-muted">{{ js }} topics in this category!</p>
+                </div>
+                <!--link-->
+                <a href="categories/java-script" class="stretched-link"></a>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card hover-lift hover-shadow-xl shadow-sm border-0">
+                <!--card-body-->
+                <div class="card-body p-4">
+                    <div class="d-flex mb-4 align-items-center">
+
+                        <!--Companies group-->
+                        <div class="flex-grow-1 d-flex align-items-center">
+                            <!--Campany-->
+                            <div class="width-5x height-5x p-2 bg-white shadow-sm position-relative flex-center rounded-circle border">
+                                <img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="img-fluid" alt="">
+                            </div>
+                            <!--Campany-->
+                            <div class="width-5x height-5x p-2 ms-n3 bg-white shadow-sm position-relative flex-center rounded-circle border">
+                                <img src="https://bootdey.com/img/Content/avatar/avatar2.png" class="img-fluid" alt="">
+                            </div>
+                            <!--Campany-->
+                            <div class="width-5x height-5x p-2 ms-n3 bg-white shadow-sm position-relative flex-center rounded-circle border">
+                                <img src="https://bootdey.com/img/Content/avatar/avatar3.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <h5>Python</h5>
+                    <p class="mb-0 text-muted">{{ python }} topics in this category!</p>
+                </div>
+                <!--link-->
+                <a href="categories/python" class="stretched-link"></a>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card hover-lift hover-shadow-xl shadow-sm border-0">
+                <!--card-body-->
+                <div class="card-body p-4">
+                    <div class="d-flex mb-4 align-items-center">
+
+                        <!--Companies group-->
+                        <div class="flex-grow-1 d-flex align-items-center">
+                            <!--Campany-->
+                            <div class="width-5x height-5x p-2 bg-white shadow-sm position-relative flex-center rounded-circle border">
+                                <img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="img-fluid" alt="">
+                            </div>
+                            <!--Campany-->
+                            <div class="width-5x height-5x p-2 ms-n3 bg-white shadow-sm position-relative flex-center rounded-circle border">
+                                <img src="https://bootdey.com/img/Content/avatar/avatar2.png" class="img-fluid" alt="">
+                            </div>
+                            <!--Campany-->
+                            <div class="width-5x height-5x p-2 ms-n3 bg-white shadow-sm position-relative flex-center rounded-circle border">
+                                <img src="https://bootdey.com/img/Content/avatar/avatar3.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <h5>Others</h5>
+                    <p class="mb-0 text-muted">{{ others }} topics in this category!</p>
+                </div>
+                <!--link-->
+                <a href="categories/others" class="stretched-link"></a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
